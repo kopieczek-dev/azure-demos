@@ -1,15 +1,12 @@
-﻿using Azure;
-using Azure.Storage.Queues;
+﻿using Azure.Storage.Queues;
 using Azure.Storage.Queues.Models;
-using System;
-using System.Threading.Tasks;
 
 namespace MessageReader
 {
     class Program
     {
-        static QueueClient _queueClient;
-        static SendReceipt _sendReceipt;
+        static QueueClient _queueClient = default!;
+        static SendReceipt _sendReceipt = default!;
 
         static async Task Main()
         {
@@ -72,7 +69,7 @@ namespace MessageReader
 
         static async Task GetQueueLenght()
         {
-            QueueProperties properties = _queueClient.GetProperties();
+            QueueProperties properties = await _queueClient.GetPropertiesAsync();
 
             // Retrieve the cached approximate message count
             int cachedMessagesCount = properties.ApproximateMessagesCount;
