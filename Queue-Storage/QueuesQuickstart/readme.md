@@ -1,0 +1,1 @@
+Source: https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-dotnet?tabs=connection-string%2Croles-azure-portal%2Cenvironment-variable-windows%2Csign-in-azure-cli
