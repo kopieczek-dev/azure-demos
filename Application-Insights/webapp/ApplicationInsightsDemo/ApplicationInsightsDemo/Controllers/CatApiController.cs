@@ -5,11 +5,11 @@ namespace ApplicationInsightsDemo.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CatApi : ControllerBase
+    public class CatApiController : ControllerBase
     {
-        private readonly ILogger<CatApi> _logger;
+        private readonly ILogger<CatApiController> _logger;
 
-        public CatApi(ILogger<CatApi> logger)
+        public CatApiController(ILogger<CatApiController> logger)
         {
             _logger = logger;
         }
