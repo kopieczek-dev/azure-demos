@@ -1,14 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebAppDemo.Pages
 {
-    public class PrivacyModel : PageModel
+    public class SettingsModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<SettingsModel> _logger;
         private readonly IConfiguration _configuration;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger, IConfiguration configuration)
+        public SettingsModel(ILogger<SettingsModel> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;
