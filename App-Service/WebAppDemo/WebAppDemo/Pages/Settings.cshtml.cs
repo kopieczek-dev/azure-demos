@@ -15,7 +15,10 @@ namespace WebAppDemo.Pages
 
         public void OnGet()
         {
-            ViewData["Setting"] = _configuration["Demo:Setting"];
+            var settingValue = _configuration["Demo:Setting"];
+            ViewData["Setting"] = settingValue;
+
+            _logger.Log(LogLevel.Debug, $"Read {settingValue} from config");
         }
     }
 
