@@ -14,7 +14,7 @@ Use *.gif from the Assets folder or feel free to use any other file, but remembe
    3. `BlobName` (`kitty.gif` if using example asset)
    4. `AccountUrl` - "`ttps://<storage-account-name>.blob.core.windows.net`,
 6. Run the solution and verify whether image/gif was displayed
-7. Change the `AccessKey` inside the `ConnectionString` to validate the connection
+7. Change the `AccessKey` inside the `ConnectionString` to validate the connection  
 
 ## Connecting to Blob Storage with Managed Identity
 1. Remove the `ConnectionString` value from the configuration
