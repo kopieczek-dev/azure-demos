@@ -35,9 +35,9 @@ How to create an Azure AD B2C instance and setup web application to use MSAL to 
 
 
 5. Update your [`appsettings.json`](/MsalDemo/MsalDemo/appsettings.json) file with the tenant configuration:
-    - `"Instance"`: "https://<your-tenant-name>.b2clogin.com"
-    - `"Domain"`:  "<your-tenant-name>.onmicrosoft.com"
-    - `"ClientId"`: "<your-client-id>",
+    - `"Instance"`: "https://your-tenant-name.b2clogin.com"
+    - `"Domain"`:  "your-tenant-name.onmicrosoft.com"
+    - `"ClientId"`: "your-client-id",
     - `"SignUpSignInPolicyId"`: "b2c_1_susi",
     - `"CallbackPath"`: "/signin-oidc"
     - `"SignedOutCallbackPath"`: "/signout/B2C_1_susi"
