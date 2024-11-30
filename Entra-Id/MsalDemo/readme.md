@@ -34,7 +34,7 @@ How to create an Azure AD B2C instance and setup web application to use MSAL to 
    - Optionally, repeat the steps to create **Password reset** and **Profile editing** policies.
 
 
-5. Update your [`appsettings.json`](/MsalDemo/MsalDemo/appsettings.json) file with the tenant configuration:
+5. Update your [`appsettings.json`](/Entra-Id/MsalDemo/MsalDemo/appsettings.json) file with the tenant configuration:
     - `"Instance"`: "https://your-tenant-name.b2clogin.com"
     - `"Domain"`:  "your-tenant-name.onmicrosoft.com"
     - `"ClientId"`: "your-client-id",
