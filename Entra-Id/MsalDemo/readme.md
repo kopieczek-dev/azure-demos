@@ -19,7 +19,6 @@ How to create an Azure AD B2C instance and setup web application to use MSAL to 
    - Make sure the correct settings are provided as the AD B2C use cache for the configuration. It may take some time to apply changes.
    - Click **Register**.
 
-
 3. **Configure the Application:**
    - After registration, go to the **Authentication** section in Azure AD B2C tenant.
    - Under **Implicit grant and hybrid flows**, check the boxes for **ID tokens** and **Access tokens**.
@@ -32,7 +31,6 @@ How to create an Azure AD B2C instance and setup web application to use MSAL to 
    - Enter "b2c_1_susi" as the name for the policy and configure the required attributes and claims.
    - Click **Create**.
    - Optionally, repeat the steps to create **Password reset** and **Profile editing** policies.
-
 
 5. Update your [`appsettings.json`](/Entra-Id/MsalDemo/MsalDemo/appsettings.json) file with the tenant configuration:
     - `"Instance"`: "https://your-tenant-name.b2clogin.com"
